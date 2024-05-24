@@ -1,0 +1,389 @@
+nav{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    height: 150px;
+  }
+  .logo{
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+}
+  nav ul{
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+    font-size: 20px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  nav a:hover{
+    background-color: gray;
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    top: 0; 
+    right: 0;
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar:first-child{
+    color: wheat;
+    padding: 20px;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width:1500px){
+    .img_txt1 h1{
+      display: none;
+    }
+    .search_bar{
+        width: 50%;
+    }
+    .img_txt p{
+        display: none;
+
+    }
+
+    }
+
+  @media(max-width: 1100px){
+    .nav{
+        width: 100%;
+    }
+    nav ul{
+        width: 0%;
+    }
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 654px){
+    .Image_container{
+      margin-left: 0;
+      padding-top: 0;
+      max-width: 510px;
+      
+    }
+    .search_bar{
+        display: none;
+    }
+    .logo{
+        width:100px;
+    }
+    .nav{
+        width: 400px;
+    }
+    .sidebar{
+      width: 100%;
+    }
+    .stats{
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+      .inner_section{
+        margin-top: 0px;
+        overflow: scroll;
+        display: flex;
+        justify-content: left;
+        max-width: 400px;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+    .main_heading{
+        max-width: 400px;
+        text-align: center ;
+   
+    }
+    .main_heading h1{
+        margin-bottom: 0px;
+    }
+    .stats_container .stats .stat h1{
+        margin-bottom: 10px;
+    }
+    .stats_container .stats .stat p{
+        display: none;
+    }
+    .stats_container .stats .stat h1 {
+        margin: 0px;
+    }
+    .stat{
+        margin: 0px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-row{
+        justify-content: flex-start;
+    }
+    .footer-row h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+        width: 300px;
+        margin-left: 20px;
+    }
+    .img_txt{
+      display: none;
+    }
+    .image{
+      background-image: url("https://www.instacart.com/assets/homepage/homepage_stats_mobile-24bd627084eed46859cb6cf670de84feb1de9ef24909f36cb85db410e57313e8.jpg");
+      padding-top: 101%;  
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      opacity: 1;
+    }
+  
+    .image6{
+      background-image: url("https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      padding-top: 101%;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      opacity: 1;
+    
+      
+    }
+    .branches{
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .branch_container{
+      width: 412px;
+    }
+    .too_big{
+      width: 412px;
+    }
+    .map iframe {
+      width: 380px;
+    }
+    .image2{
+      background-image: url("");
+      padding-top: 101%;
+    }
+    table thead{
+      display: none;
+    }
+    table tr,.table td{
+      display: block;
+      width: 100%;
+    
+    }
+    table .tr{
+      margin-bottom: 1rem;
+    }
+    table tbody tr td{
+      text-align: right;
+      position: relative;
+    }
+    table td::before{
+      content: attr(data-lable);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      text-align: left;
+      padding-left: 1.2rem;
+
+    }
+    table td:last-child(){
+      display: none;
+    }
+  .dairy_section_inner{
+    flex-wrap: wrap;
+  } 
+  .inner_Dairy_section_container{
+    width: 205px;
+  }
+  .inner_Dairy_section_container button{
+    font-size: 20px;
+  }
+  .inner_Dairy_section_container img {
+    width: 205px;
+  }
+    .pro_info{
+      height: 300px;
+    }
+    .large{
+      max-width: 185px;
+    }
+    .pro_info button{
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    .image3{
+      background-image: url("https://idahomilkproducts.b-cdn.net/wp-content/uploads/2021/09/processing-differences-common-dairy-products.jpg");
+      padding-top: 101%;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      opacity: 1;
+  }
+    .Mobile_heading{
+      margin-bottom: 0;
+      display: block;
+      text-align: center;
+      font-size: 29px;
+      line-height: 30px;
+      font-weight: normal;
+      max-width: 500px;
+      color: #343538;
+    }
+    .Image_container6{
+
+      margin-left: 0;
+      padding-top: 0;
+      max-width: 510px
+      
+    }
+    .container{
+      padding-left: 2px;
+      padding-right: 2px;
+      margin-right: 10px;
+    }
+    .box-container {
+      max-width: 412px;
+    }
+    .container .box-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, max(200px));
+      gap: 5px;
+    }
+    .box{
+      max-height: 600px;
+      max-width: 250px;
+    }
+    .vege_head{
+      margin: 0;
+    }
+    .container .box-container .box h1{
+      font-size: 20px;
+    }
+    .box button{
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+    .box img{
+      max-width: 185px;
+      max-height: 185px;
+    }
+
+    .container{
+      margin: 0;
+    }
+    .container .box-container {
+      margin-left: 0;
+    }
+
+
+
+    .image4{
+      background-image: url("https://i.guim.co.uk/img/media/01f87bf222d7a5480efed804f97fc34d3b76e20c/0_200_6000_3600/master/6000.jpg?width=1200&quality=85&auto=format&fit=max&s=f4840b2c8cea84c3b0c61bae7ef22fc4");
+      padding-top: 101%;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      opacity: 1;
+    }
+    .cosimg_txt{
+      display: none;
+    }
+    .cos_table {
+      max-width: 100%;
+      margin: 0;
+    }
+    .Coscontainer{
+      max-width: 190px;
+      max-height: 440px;
+      margin-left: 7px;
+      
+
+    }
+    .Cos_img img{
+      max-width: 185px;
+      border-radius: 30px;
+    }
+    .Cosinfo{
+      max-width:150px;
+      height: 200px;
+      border-radius: 30px;
+    }
+    .Cosinfo h1{
+      font-size: 20px;
+    }
+
+  .maincos{
+    padding: 0;
+  }
+    table,thead,tbody {
+    display: block;
+  }
+  tr{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  td{
+    max-width: 200px;
+    padding-left: 2px;
+    margin-bottom: 5px;
+  }
+
+  th,td {
+    display:inline-block;
+    width: 100%;
+   
+  }
+  .Order_con{
+    flex-direction: column;
+  }
+}
+
+
