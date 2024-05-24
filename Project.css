@@ -15,7 +15,7 @@ body{
     border-radius:11px;
 }
 
-a{
+button a{
    text-decoration:none;
 }
 .navdiv .dropdown-content a {
