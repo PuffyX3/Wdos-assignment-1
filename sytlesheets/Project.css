@@ -522,14 +522,8 @@ h2{
         color: white;
         padding: 0 0 10px;
     }
-    .Service-table thead, .Service-table  tbody, .Service-table  thead th {
-        display: block;
-    }
     .Service-table  thead th:last-child{
         border-bottom: none;
-    }
-    .Service-table  thead {
-        float: left;
     }
     .Service-table  tbody {
         width: auto;
@@ -548,7 +542,7 @@ h2{
         text-overflow: ellipsis;
     }
     .Service-table  thead th {
-        text-align: left;
+        text-align: center;
         border-bottom: 1px solid #f7f7f9;
     }
     .Service-table  tbody tr {
