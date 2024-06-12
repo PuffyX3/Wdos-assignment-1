@@ -513,6 +513,7 @@ h2{
         display: block;
         width: 100%;
     }
+     
     .table-wrapper:before{
         content: "Scroll horizontally >";
         display: block;
@@ -566,6 +567,10 @@ h2{
     .Service-table  tr td:nth-child(even) {
         border-right: 1px solid #E6E4E4;
     }
+    .Service-table tr:last-child{
+       display: none;
+    }
+	
     .Service-table tbody td {
         display: block;
         text-align: center;
