@@ -1394,6 +1394,7 @@ form .button input{
     }
     .branch_container{
       width: 412px;
+      margin:0;
     }
     .too_big{
       width: 412px;
