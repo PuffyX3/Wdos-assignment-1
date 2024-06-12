@@ -491,7 +491,7 @@ h2{
     font-size: 12px;
 }
 
-.Service-table  thead th {
+.Service-table   th {
     color: #ffffff;
     background: #4FC3A1;
 }
@@ -521,6 +521,7 @@ h2{
         font-size: 11px;
         color: white;
         padding: 0 0 10px;
+	margin:0;
     }
     .Service-table  thead th:last-child{
         border-bottom: none;
@@ -561,7 +562,7 @@ h2{
     .Service-table  tr td:nth-child(even) {
         border-right: 1px solid #E6E4E4;
     }
-    .Service-table tr:last-child{
+    .Service-table tbody tr:last-child{
        display: none;
     }
 	
