@@ -714,6 +714,10 @@ h2{
     border: none;
     margin-bottom: 10px;
 }
+.Cosinfo button a{
+	text-decorations:none;
+	color:white;
+}
 .Cosinfo button:hover{
     font-size: 20px;
     background-color: #10182F; 
