@@ -1435,6 +1435,8 @@ form .button input{
     }
     button a{
        text-decoration:none;
+       color: white;
+    
 	}
     .image3{
       background-image: url("https://idahomilkproducts.b-cdn.net/wp-content/uploads/2021/09/processing-differences-common-dairy-products.jpg");
