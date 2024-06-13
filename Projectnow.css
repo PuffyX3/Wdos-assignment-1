@@ -152,6 +152,8 @@ hr{
     height: 0;
     padding-top: 34.63%;
     border-radius: 8px;
+    opacity: 0.6;
+
     
 }
 .img_txt{
@@ -1347,6 +1349,7 @@ form .button input{
     }
     .branch_container{
       width: 412px;
+      margin:0;
     }
     .too_big{
       width: 412px;
@@ -1355,8 +1358,9 @@ form .button input{
       width: 412px;
     }
     .image2{
-      background-image: url("");
+      background-image: url("https://peakbusinessvaluation.com/wp-content/uploads/how-to-value-a-grocery-store-or-supermarket-scaled.webp");
       padding-top: 101%;
+	    
     }
     table thead{
       display: none;
