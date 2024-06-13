@@ -152,6 +152,7 @@ hr{
     height: 0;
     padding-top: 34.63%;
     border-radius: 8px;
+    opacity:0.6;
     
 }
 .img_txt{
@@ -1366,7 +1367,7 @@ form .button input{
       width: 400px;
     }
     .image2{
-      background-image: url("");
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn-Ly6lzP-FkDwQxEm7aEDbBmtvYaD5NjRHu2EnbJ6gQhvdyYon6-G1QDqDM464oGuJqw&usqp=CAU");
       padding-top: 101%;
     }
     table thead{
