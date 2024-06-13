@@ -30,7 +30,7 @@ body{
     display: block;
 }
 
-header{
+.header{
     color: white;
     background-color: black;
     display: flex;
@@ -54,7 +54,7 @@ hr{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 50%;
+    width: 40%;
     background-color: white;
     border: none;
     margin: 0;
@@ -65,7 +65,7 @@ hr{
     display: flex;
     border: none;
     outline: none;
-    width: 80%;
+    width: 40%;
     font-size: 16px;
 }
 .search_bar button{
@@ -88,8 +88,8 @@ hr{
 }
 
 
-.nav_elements ul  a li{
-    font-size: 20px;
+.nav_elements ul  li a {
+    font-size: 10px;
     margin: 5px;
     color: white;
     padding:10px;
@@ -152,7 +152,12 @@ hr{
     height: 0;
     padding-top: 34.63%;
     border-radius: 8px;
+    opacity: 0.6;
     
+}
+.box button a{
+  text-decoration: none;
+  color: white;
 }
 .img_txt{
     margin-top: 400px;
@@ -221,6 +226,10 @@ hr{
 }
 .large_ser{
     max-width: 343px;
+    height: 257px;
+}
+.large_ser1{
+  max-width: 350px;
     height: 257px;
 }
 .txtcon{
@@ -341,7 +350,7 @@ hr{
     width: 612px;
 }
 
-.map iframe{
+.map {
     border-radius: 10px;
 }
 
@@ -451,10 +460,9 @@ h2{
 .footin{
     display: flex;
     justify-content: center;
-    width:80%;
+    width:100%;
 }
 /* Table Styles */
-
 .service-table {
   border: 1px solid #ccc;
   border-collapse: collapse;
@@ -536,7 +544,6 @@ h2{
   .service-table  td:last-child {
     border-bottom: 0;
   }
-
 
 /*diary page*/
 
@@ -631,18 +638,18 @@ h2{
 .pro_info:hover{
     background-color:rgb(235, 50, 50);
     color: white;
-    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.3);
+    -shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.3);
     transition: 0.5s;
 }
 .Coscontainer{
-
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px;
+    height:500px;
     border-radius: 30px;
     margin-right: 20px;
     transition: 1s;
@@ -662,7 +669,7 @@ h2{
 }
 .Coscontainer:hover{
     color: rgb(245, 6, 117);
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    -shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
 .Cos_img:hover{
@@ -687,6 +694,10 @@ h2{
     font-size: 20px;
     border: none;
     margin-bottom: 10px;
+}
+.Cosinfo button a{
+  text-decoration: none;
+  color: white;
 }
 .Cosinfo button:hover{
     font-size: 20px;
@@ -747,7 +758,7 @@ h2{
     font-size: 3rem;
   }
   
-  .container .box-container {
+  .container .-container {
     max-width: 1100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0,250px));
@@ -755,8 +766,8 @@ h2{
     margin-left: 120px;
   }
   
-  .container .box-container .box {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  .container .-container {
+    -shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     background: #fff;
     text-align: center;
@@ -765,7 +776,7 @@ h2{
     transition: all 0.3s ease-in-out;
   }
   
-  .container .box-container .box img {
+  .container .-container img {
     width: 185px;
     height: 12rem;
     transition: 1s;
@@ -908,10 +919,6 @@ input::-webkit-inner-spin-button {
     margin: 0;
 
 }
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
 form .gender-details .gender-title{
     font-size: 20px;
     font-weight: 500;
@@ -1032,6 +1039,7 @@ form .button input{
 	text-transform: uppercase;
 	transition: all 0.1s ease-in-out;
 }
+
 
 .btn-primary:hover {
 	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
@@ -1159,8 +1167,10 @@ form .button input{
     margin: 0;
     padding: 10px;
     height: 150px;
+	
   }
   .logo{
+    max-width: 150px;
     margin: 20px;
     cursor: pointer;
     color: white;
@@ -1251,6 +1261,9 @@ form .button input{
     }
   }
   @media(max-width: 654px){
+    .dis{
+      display: none;
+    }
     .Image_container{
       margin-left: 0;
       padding-top: 0;
@@ -1264,7 +1277,7 @@ form .button input{
         width:100px;
     }
     .nav{
-        width: 400px;
+        width: 412px;
     }
     .sidebar{
       width: 100%;
@@ -1318,6 +1331,12 @@ form .button input{
         width: 300px;
         margin-left: 20px;
     }
+    .footer-col p{
+      margin-left: 20px;
+    }
+    .footer-col input{
+      margin-left: 7px;
+    }
     .img_txt{
       display: none;
     }
@@ -1348,24 +1367,22 @@ form .button input{
     }
     .branch_container{
       width: 412px;
+      margin:0;
     }
     .too_big{
       width: 412px;
     }
     .map iframe {
-      width: 380px;
+      width: 412px;
     }
     .image2{
       background-image: url("");
       padding-top: 101%;
+      opacity: 1;
     }
-    table thead{
-      display: none;
-    }
+   
     table tr,.table td{
       display: block;
-      width: 100%;
-    
     }
     table .tr{
       margin-bottom: 1rem;
@@ -1493,7 +1510,7 @@ form .button input{
     }
     .Coscontainer{
       max-width: 190px;
-      max-height: 440px;
+      max-height: 450px;
       margin-left: 7px;
       
   
@@ -1536,7 +1553,5 @@ form .button input{
   .Order_con{
     flex-direction: column;
   }
-  }
-  
-  
-  
+  }  
+}
