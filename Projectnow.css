@@ -55,7 +55,7 @@ hr{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 50%;
+    width: 40%;
     background-color: white;
     border: none;
     margin: 0;
@@ -1380,7 +1380,7 @@ form .button input{
       width: 412px;
     }
     .map iframe {
-      width: 380px;
+      width: 412px;
     }
     .image2{
       background-image: url("");
