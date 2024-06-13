@@ -30,7 +30,7 @@ body{
     display: block;
 }
 
-.header{
+header{
     color: white;
     background-color: black;
     display: flex;
