@@ -1287,10 +1287,16 @@ form .button input{
       max-width: 510px;
       
     }
+    .formcon{
+      max-width: 412px;
+    }
 .benifits{
 	max-width:412px;
 }
 .pricing-box-container {
+  display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 }
     .search_bar{
