@@ -349,6 +349,7 @@ hr{
 .Section_heading{
     font-size: 60px;
     color: black;
+    text-align: center;
 }
 /*------------------footer---------------------------*/
 
@@ -451,7 +452,7 @@ h2{
 .footin{
     display: flex;
     justify-content: center;
-    width:80%;
+    width:100%;
 }
 /* Table Styles */
 
@@ -461,108 +462,85 @@ h2{
 }
 
 .Service-table {
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: normal;
-    border: none;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-    white-space: nowrap;
-    background-color: white;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.Service-table  td, .Service-table th {
-    text-align: center;
-    padding: 8px;
+.Service-table  caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
 }
 
+.Service-table  tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.Service-table  th,
 .Service-table td {
-    border-right: 1px solid #f8f8f8;
-    font-size: 12px;
+  padding: .625em;
+  text-align: center;
 }
 
-.Service-table  thead th {
-    color: #ffffff;
-    background: #4FC3A1;
+.Service-table  th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+.Service-table  {
+    border: 0;
+  }
 
-.Service-table  thead th:nth-child(odd) {
-    color: #ffffff;
-    background: #324960;
+.Service-table  caption {
+    display: none;
+  }
+  
+.Service-table  thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+.Service-table  tr {
+    max-width: 400px;
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+.Service-table  td {
+  max-width: 400px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1em;
+    text-align: right;
+  }
+  
+.Service-table  td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+ .Service-table  td:last-child {
+    border-bottom: 0;
+  }
 }
 
-.Service-table  tr:nth-child(even) {
-    background: #F8F8F8;
-}
-
-/* Responsive */
-
-@media (max-width: 767px) {
-    .Service-table  {
-        display: block;
-        width: 100%;
-    }
-	
-    .table-wrapper:before{
-        content: "Scroll horizontally >";
-        display: block;
-        text-align: right;
-        font-size: 11px;
-        color: white;
-        padding: 0 0 10px;
-    }
-    .Service-table thead, .Service-table  tbody, .Service-table  thead th {
-        display: block;
-    }
-    .Service-table  thead th:last-child{
-        border-bottom: none;
-    }
-    .Service-table  thead {
-        float: left;
-    }
-    .Service-table  tbody {
-        width: auto;
-        position: relative;
-        overflow-x: auto;
-    }
-    .Service-table  td, .Service-table  th {
-        padding: 20px .625em .625em .625em;
-        height: 60px;
-        vertical-align: middle;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: auto;
-        width: 120px;
-        font-size: 13px;
-        text-overflow: ellipsis;
-    }
-    .Service-table  thead th {
-        text-align: left;
-        border-bottom: 1px solid #f7f7f9;
-    }
-    .Service-table  tbody tr {
-        display: table-cell;
-    }
-    .Service-table  tbody tr:nth-child(odd) {
-        background: none;
-    }
-    .Service-table  tr:nth-child(even) {
-        background: transparent;
-    }
-    .Service-table  tr td:nth-child(odd) {
-        background: #F8F8F8;
-        border-right: 1px solid #E6E4E4;
-    }
-    .Service-table  tr td:nth-child(even) {
-        border-right: 1px solid #E6E4E4;
-    }
-    .Service-table tbody td {
-        display: block;
-        text-align: center;
-    }
-}
 
 
 /*diary page*/
@@ -715,9 +693,10 @@ h2{
     border: none;
     margin-bottom: 10px;
 }
+
 .Cosinfo button a{
-	text-decorations:none;
-	color:white;
+  text-decoration: none;
+  color: white;
 }
 .Cosinfo button:hover{
     font-size: 20px;
@@ -822,13 +801,17 @@ h2{
   .container .box-container .box p:hover {
     color: #31d400;
   }
+  .container .box-container .box button a{
+    text-decoration:none;
+    color: white;
+  }
   
   .box button {
     background-color: #324960;
     color: white;
     border-radius: 1rem;
     padding: 1.25rem;
-    font-size: 2rem;
+    font-size: 1rem;
     border: none;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -938,10 +921,6 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 
-}
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 form .gender-details .gender-title{
     font-size: 20px;
@@ -1192,6 +1171,7 @@ form .button input{
     height: 150px;
   }
   .logo{
+    margin: 20px;
     cursor: pointer;
     color: white;
   }
@@ -1257,7 +1237,7 @@ form .button input{
       display: none;
     }
     .search_bar{
-        width: 50%;
+        width: 40%;
     }
     .img_txt p{
         display: none;
@@ -1287,18 +1267,6 @@ form .button input{
       max-width: 510px;
       
     }
-    .formcon{
-      max-width: 412px;
-    }
-.benifits{
-	max-width:412px;
-}
-.pricing-box-container {
-  display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
     .search_bar{
         display: none;
     }
@@ -1389,13 +1357,14 @@ form .button input{
       flex-wrap: wrap;
     }
     .branch_container{
-      width: 412px;
+      width: 400px;
+      margin: 0;
     }
     .too_big{
-      width: 412px;
+      width: 400px;
     }
     .map iframe {
-      width: 380px;
+      width: 400px;
     }
     .image2{
       background-image: url("");
@@ -1450,11 +1419,6 @@ form .button input{
       height: 100px;
       margin-bottom: 10px;
     }
-    button a{
-       text-decoration:none;
-       color: white;
-    
-	}
     .image3{
       background-image: url("https://idahomilkproducts.b-cdn.net/wp-content/uploads/2021/09/processing-differences-common-dairy-products.jpg");
       padding-top: 101%;
@@ -1545,18 +1509,10 @@ form .button input{
       
   
     }
-.box button a{
-  text-decoration: none;
-  color: white;
-}
     .Cos_img img{
       max-width: 185px;
       border-radius: 30px;
     }
-    .Cosinfo button a{
- 	 text-decoration: none;
-  	color: white;
-}
     .Cosinfo{
       max-width:150px;
       height: 200px;
