@@ -462,8 +462,6 @@ h2{
   padding: 0;
   width: 100%;
   table-layout: fixed;
-  max-width:412px;
-
 }
 
 .service-table caption {
@@ -486,7 +484,6 @@ h2{
 }
 
 .service-table  th {
-	
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
