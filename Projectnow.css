@@ -452,7 +452,7 @@ h2{
 .footin{
     display: flex;
     justify-content: center;
-    width:80%;
+    width:100%;
 }
 /* Table Styles */
 .service-table {
@@ -485,6 +485,7 @@ h2{
 }
 
 .service-table  th {
+	
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
