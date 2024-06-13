@@ -1433,6 +1433,9 @@ form .button input{
       height: 100px;
       margin-bottom: 10px;
     }
+    button a{
+       text-decoration:none;
+	}
     .image3{
       background-image: url("https://idahomilkproducts.b-cdn.net/wp-content/uploads/2021/09/processing-differences-common-dairy-products.jpg");
       padding-top: 101%;
@@ -1523,10 +1526,18 @@ form .button input{
       
   
     }
+.box button a{
+  text-decoration: none;
+  color: white;
+}
     .Cos_img img{
       max-width: 185px;
       border-radius: 30px;
     }
+    .Cosinfo button a{
+ 	 text-decoration: none;
+  	color: white;
+}
     .Cosinfo{
       max-width:150px;
       height: 200px;
